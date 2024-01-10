@@ -48,4 +48,7 @@ dependencies {
 
     // Logging
     implementation("io.ktor:ktor-server-call-logging-jvm")
+
+    // Cors
+    implementation("io.ktor:ktor-server-cors:$ktor_version")
 }

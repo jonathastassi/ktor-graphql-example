@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.plugins.configureCors
 import com.example.plugins.configureKoin
 import com.example.plugins.configureGraphQL
 import com.example.plugins.configureMonitoring
@@ -13,6 +14,7 @@ fun main() {
 }
 
 fun Application.module() {
+    configureCors()
     configureMonitoring()
     configureKoin()
     configureGraphQL()

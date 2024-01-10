@@ -1,5 +1,6 @@
 package com.example.plugins
 
+import com.example.graphql.query.CommentQuery
 import com.example.graphql.query.PostQuery
 import com.example.graphql.query.UserQuery
 import com.expediagroup.graphql.server.ktor.GraphQL
@@ -19,6 +20,9 @@ fun Application.configureGraphQL() {
                 ),
                 PostQuery(
                     postApi = get()
+                ),
+                CommentQuery(
+                    commentApi = get(),
                 )
             )
         }
